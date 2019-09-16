@@ -1,0 +1,200 @@
+<html>
+    <head>
+      <title>Rock Paper Scissors Game</title> 
+	  
+	  <style>
+		*{
+			background-color:#1b6387;
+		}
+		.game-container{
+			text-align:center;
+		}
+		h1{
+			color:yellow;
+			margin-bottom:30px;
+			
+		}
+		.sco{
+			font-size:30px;
+			font-weight:bold;
+			color:white;
+		}
+		#compScore{
+			color:yellow;
+			font-size:25px;
+		}
+		#userScore{
+			color:yellow;
+			font-size:25px;
+		}
+		
+		#rock{
+		margin-top:50px;
+		font-size:30;
+		color:white;
+		margin-right:10px;
+		border-radius: 50%;
+		width:10%;
+		height:22%;
+		border: 2px solid yellow; 
+		background-color:green;
+		}
+		#scissors{
+		margin-top:50px;
+		font-size:30px;
+		color:white;
+		margin-right:10px;
+		border-radius: 50%;
+		width:10%;
+		height:22%;
+		border: 2px solid yellow; 
+		background-color:green;
+		}
+		#paper{
+		margin-top:50px;
+		font-size:30px;
+		color:white;
+		margin-right:10px;
+		border-radius: 50%;
+		width:10%;
+		height:22%;
+		border: 2px solid yellow; 
+		background-color:green;
+		}
+		
+		
+		
+		#rock:hover{
+			background-color:#1b6387;
+			border: 2px solid white;
+		}
+		#paper:hover{
+			background-color:#1b6387;
+			border: 2px solid white;
+		}
+		#scissors:hover{
+			background-color:#1b6387;
+			border: 2px solid white;
+		}
+		
+		#rock:active{
+			background-color: yellow;
+			border: 2px solid red;
+			color:blue;
+		}
+		#paper:active{
+			background-color: yellow;
+			border: 2px solid red;
+			color:blue;
+		}
+		#scissors:active{
+			background-color: yellow;
+			border: 2px solid red;
+			color:blue;
+		}
+		
+		.winnings{
+		
+		margin-top:60px;
+		font-size:30px;
+		color:orange;
+		}
+		#result{
+			margin-top:60px;
+			font-size:30px;
+			color:orange;
+			display:none;
+			
+		}
+		
+		#strt{
+		margin-top:50px;
+		font-size:30px;
+		color:white;
+		margin-right:10px;
+		border-radius: 50%;
+		width:10%;
+		height:22%;
+		border: 2px solid yellow; 
+		background-color:green;
+		}
+		#ov{
+		margin-top:50px;
+		font-size:30px;
+		color:white;
+		margin-right:10px;
+		border-radius: 10%;
+		width:15%;
+		height:12%;
+		border: 2px solid yellow; 
+		background-color:Red;
+		
+		}
+		#over{
+		display:none;
+		}
+		#ov:hover{
+			background-color:#1b6387;
+			border: 2px solid white;
+		}
+		#ov:active{
+			background-color: yellow;
+			border: 2px solid green;
+			color:blue;
+		}
+		
+		
+		#strt:hover{
+			background-color:#1b6387;
+			border: 2px solid white;
+		}
+		#strt:active{
+			background-color: yellow;
+			border: 2px solid red;
+			color:blue;
+		}
+		
+		#bord{
+			display:none;
+		}
+	  
+	  </style>
+	  
+    </head>
+	
+    <body>
+        <div class="game-container">
+            <h1>Rock Paper Scissors Game</h1>
+			
+			<div id="bord">
+				<div class="sco">
+                 
+                Player  (<span id="userScore">0</span> - <span id="compScore">0</span>)  Computer
+			</div>
+			
+            <div class="button-container">
+               
+                    <button id="rock">Rock</button>
+                    <button id="paper" >Paper</button>
+                    <button id="scissors">Scissor</button>
+            </div>
+			
+			</div>
+			<div id="start">
+				<button id="strt">Start</button>
+			</div>
+			
+			<div id="over">
+				<button id="ov">End Game</button>
+			</div>
+			
+			<div id="result">
+               <h2 id="res"><h2>
+            </div>
+			
+         
+        </div>
+        <script src="backend.js"></script>
+    </body>
+
+</html>
